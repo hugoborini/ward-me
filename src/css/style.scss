@@ -6,11 +6,15 @@
 
 .image_bg {
   display: flex;
-  background-image: url("../assets/fond.jpg");
+  background-image: url("../assets/fond.png");
   width: 100vw;
   height: 400px;
   justify-content: center;
   align-items: center;
+  @include large {
+    background-image: url("../assets/fond_destop.jpg");
+    height: 600px;
+  }
 }
 
 img {

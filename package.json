@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/hugoborini/ward-me#readme",
   "dependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "sass": "^1.24.0"
