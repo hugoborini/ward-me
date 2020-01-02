@@ -1,0 +1,99 @@
+@mixin large {
+  @media (min-width: 772px) {
+    @content;
+  }
+}
+
+.image_bg {
+  display: flex;
+  background-image: url("../assets/fond.jpg");
+  width: 100vw;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+}
+
+.name {
+  margin-top: 50px;
+  border-bottom: solid black 1px;
+  width: 195px;
+  height: 20px;
+  padding-left: 55px;
+}
+
+.expertise {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  height: 100vh;
+
+  @include large {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+  }
+}
+
+.first_exp {
+  display: flex;
+  margin-top: 20px;
+  height: 250px;
+  width: 213px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid black 1px;
+  border-radius: 30px;
+  @include large {
+    margin-top: 0px;
+  }
+}
+
+.sec_exp {
+  display: flex;
+  margin-top: 56px;
+  height: 250px;
+  width: 213px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid black 1px;
+  border-radius: 30px;
+  @include large {
+    margin-top: 0px;
+  }
+}
+
+.trith_exp {
+  display: flex;
+  margin-top: 56px;
+  margin-bottom: 56px;
+  height: 250px;
+  width: 213px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid black 1px;
+  border-radius: 30px;
+  @include large {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.title_article {
+  font-size: 18;
+  font-weight: lighter;
+}
+.chat {
+  width: 66px;
+  height: 66px;
+}
